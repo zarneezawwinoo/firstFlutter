@@ -7,21 +7,19 @@ void main() {
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,
       title: ' First Flutter',
       theme: ThemeData(
         primarySwatch: Colors.pink,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'First Flutter'),
+      home: const MyHomePage(title: 'First Flutter'),
     );
-  }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  const MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -39,17 +37,15 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
-        title: Text('Art'),
+        title: const Text('Art'),
       ),
       body: Center(
         child:Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               'You have pushed the button this many times:',
             ),
             Text(
@@ -65,5 +61,4 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Icon(Icons.favorite),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
-  }
 }
