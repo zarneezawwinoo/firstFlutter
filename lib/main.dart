@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ui/counter_screen.dart';
+import 'ui/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,8 +13,9 @@ class MyApp extends StatelessWidget {
       title: ' First Flutter',
       theme: ThemeData(
         primarySwatch: Colors.pink,
+        primaryColor: Colors.teal,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const MyHomePage(title: 'First Flutter'),
+      home: LoginScreen(),
     );
 }
