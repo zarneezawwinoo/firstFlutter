@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ui/login_screen.dart';
+import 'ui/text_field_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.teal,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginScreen(),
+      home: TextFieldScreen(),
+
     );
 }
